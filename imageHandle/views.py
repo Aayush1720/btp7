@@ -30,6 +30,10 @@ def getCaption(img):
 
     return str(uuid.uuid4())
 
+def getTags(imgCaption):
+
+    return []
+
 @csrf_exempt 
 def upload(request):
     img = request.FILES.get("image")
@@ -37,7 +41,7 @@ def upload(request):
     imgCaption = getCaption(img)
     
 
-    tags = imgCaption.split()
+    tags = getTags(imgCaption)
     for tag in tags:
         newEntry = imageModel(
         image = imgUrl,
