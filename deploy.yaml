@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp
+  labels:
+    app: imageCaption
+spec:
+	replicas: 2
+  selector:
+    matchLabels:
+      app: imageCaption
+  template:
+    metadata:
+      labels:
+        app: imageCaption
+    spec:
+      containers:
+        - image: django1720.azurecr.io/c425acaec72d
+          name: imageCaption
+          ports:
+            - containerPort: 8000
+              name: gunicorn
