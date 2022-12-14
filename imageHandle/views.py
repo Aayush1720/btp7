@@ -9,6 +9,10 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http.response import JsonResponse, HttpResponse
 
 # Create your views here.
+def home(request):
+    return HttpResponse("Welcome on home!")
+
+
 def loadConfig():
     dir_root = os.path.dirname(os.path.abspath(__file__))
     with open( dir_root + '/blob_config.yaml', "r") as yamlfile:
