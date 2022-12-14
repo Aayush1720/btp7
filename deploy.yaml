@@ -15,7 +15,7 @@ spec:
         app: django
     spec:
       containers:
-        - image: django1720.azurecr.io/c425acaec72d
+        - image: itachi1720/c425acaec72d
           name: django
           ports:
             - containerPort: 8000
