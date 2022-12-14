@@ -1,0 +1,3 @@
+azure_storage_connectionstring: "DefaultEndpointsProtocol=https;AccountName=aayush1720;AccountKey=+y68YlkrXo04/NYhNBPWXs7nKYFxBHgsUfZskv1hMkcplUvrKRE/lrfOXFiuf03RSWV6i+s6ozoA+ASt8SfYpQ==;EndpointSuffix=core.windows.net"
+image_container_name : "imagecontainer"
+source_folder : ""
